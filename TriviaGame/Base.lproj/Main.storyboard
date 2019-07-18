@@ -80,6 +80,7 @@
                     <connections>
                         <outlet property="endOfGameMessage" destination="dOz-r4-Uce" id="Pj3-Yl-DgB"/>
                         <outlet property="questionLabel" destination="HYn-wo-xjw" id="W6r-MU-IvN"/>
+                        <outlet property="scoreLabel" destination="4j0-RU-7At" id="pyg-ky-4j3"/>
                         <outlet property="userAnswerTextField" destination="a6k-oO-lue" id="z6X-dR-0UY"/>
                         <outlet property="validationLabel" destination="CtJ-lb-1iZ" id="4IS-gb-Tdp"/>
                     </connections>
