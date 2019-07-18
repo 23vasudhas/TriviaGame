@@ -21,10 +21,12 @@ class ViewController: UIViewController {
     @IBOutlet weak var validationLabel: UILabel!
     @IBOutlet weak var endOfGameMessage: UILabel!
     @IBOutlet weak var scoreLabel: UILabel!
+    @IBOutlet weak var menuButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         questionLabel.text = questions[currentQ]
+        menuButton.isHidden = true
     }
 
     @IBAction func checkButtonClick(_ sender: Any) {
@@ -44,9 +46,11 @@ class ViewController: UIViewController {
         currentQ += 1
         if (currentQ >= questions.count){
             if(score > questions.count / 2 ) {
-                endOfGameMessage.text = "Well Done. That was a great game!"
+                endOfGameMessage.text = "Well Done. That was a great game! \nClick MENU to play again!"
+                menuButton.isHidden = false
             } else {
-                endOfGameMessage.text = "Better luck next time!"
+                endOfGameMessage.text = "Better luck next time! \nClick MENU to play again!"
+                menuButton.isHidden = false
             }
         } else {
             questionLabel.text = questions[currentQ]

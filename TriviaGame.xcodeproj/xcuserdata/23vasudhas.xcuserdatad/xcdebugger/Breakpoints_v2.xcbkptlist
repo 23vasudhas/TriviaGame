@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TriviaGame/ViewController.swift"
-            timestampString = "585177608.9990799"
+            timestampString = "585179662.392585"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "45"
-            endingLineNumber = "45"
+            startingLineNumber = "47"
+            endingLineNumber = "47"
             landmarkName = "checkButtonClick(_:)"
             landmarkType = "7">
          </BreakpointContent>

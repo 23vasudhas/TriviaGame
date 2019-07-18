@@ -67,18 +67,32 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Score: 0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4j0-RU-7At">
-                                <rect key="frame" x="20" y="818" width="374" height="44"/>
+                                <rect key="frame" x="20" y="818" width="236" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="30"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8tD-7l-uUw">
+                                <rect key="frame" x="301" y="815" width="93" height="47"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.081040263664047249" green="0.084627641470639878" blue="0.74807661802030456" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="30"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="MENU">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="mvP-vX-hzo" kind="show" id="hTJ-4Y-QjJ"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.014705538084425658" green="0.0" blue="0.61522446065989844" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
                         <outlet property="endOfGameMessage" destination="dOz-r4-Uce" id="Pj3-Yl-DgB"/>
+                        <outlet property="menuButton" destination="8tD-7l-uUw" id="o3h-tI-BGH"/>
                         <outlet property="questionLabel" destination="HYn-wo-xjw" id="W6r-MU-IvN"/>
                         <outlet property="scoreLabel" destination="4j0-RU-7At" id="pyg-ky-4j3"/>
                         <outlet property="userAnswerTextField" destination="a6k-oO-lue" id="z6X-dR-0UY"/>
@@ -200,4 +214,7 @@
         <image name="brainnerd" width="800" height="662"/>
         <image name="triviatime" width="800" height="600"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="hTJ-4Y-QjJ"/>
+    </inferredMetricsTieBreakers>
 </document>
