@@ -12,6 +12,7 @@
 		58774A2B22E0DD2E00800431 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 58774A2922E0DD2E00800431 /* Main.storyboard */; };
 		58774A2D22E0DD3100800431 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 58774A2C22E0DD3100800431 /* Assets.xcassets */; };
 		58774A3022E0DD3100800431 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 58774A2E22E0DD3100800431 /* LaunchScreen.storyboard */; };
+		58774A3C22E0F3C000800431 /* timefortriv?a.png in Resources */ = {isa = PBXBuildFile; fileRef = 58774A3B22E0F3C000800431 /* timefortriv?a.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		58774A2C22E0DD3100800431 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		58774A2F22E0DD3100800431 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		58774A3122E0DD3100800431 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		58774A3B22E0F3C000800431 /* timefortriv?a.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "timefortriv?a.png"; path = "../../timefortriv?a.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 				58774A2C22E0DD3100800431 /* Assets.xcassets */,
 				58774A2E22E0DD3100800431 /* LaunchScreen.storyboard */,
 				58774A3122E0DD3100800431 /* Info.plist */,
+				58774A3B22E0F3C000800431 /* timefortriv?a.png */,
 			);
 			path = TriviaGame;
 			sourceTree = "<group>";
@@ -125,6 +128,7 @@
 				58774A3022E0DD3100800431 /* LaunchScreen.storyboard in Resources */,
 				58774A2D22E0DD3100800431 /* Assets.xcassets in Resources */,
 				58774A2B22E0DD2E00800431 /* Main.storyboard in Resources */,
+				58774A3C22E0F3C000800431 /* timefortriv?a.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
