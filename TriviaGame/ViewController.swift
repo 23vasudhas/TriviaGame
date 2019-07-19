@@ -23,6 +23,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var endOfGameMessage: UILabel!
     @IBOutlet weak var scoreLabel: UILabel!
     @IBOutlet weak var menuButton: UIButton!
+    @IBOutlet weak var showAnswerSwitch: UISwitch!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -42,9 +43,12 @@ class ViewController: UIViewController {
             validationLabel.text = "That is correct!"
             score += 1
         } else {
-            validationLabel.text = "Incorrect. The correct answer is \(correctAnswer)."
+            if(showAnswerSwitch.isOn) {
+                validationLabel.text = "Incorrect. The correct answer is \(correctAnswer)."
+            } else {
+                validationLabel.text = "That is incorrect."
+            }
         }
-        
         //end of game messages
         currentQ += 1
         if (currentQ >= questions.count){
@@ -60,18 +64,16 @@ class ViewController: UIViewController {
         }
         userAnswerTextField.text = ""
         scoreLabel.text = "Score: \(String(score))"
-    }
 
 
-
-
+}
+  
     @IBAction func textFieldEnterPress(_ sender: Any) {
         processAnswer()
     }
-    //responses for when user answers the question
     @IBAction func checkButtonClick(_ sender: Any) {
         processAnswer()
     }
-        
-
+    
+    
 }
